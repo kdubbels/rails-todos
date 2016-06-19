@@ -3,4 +3,7 @@ class Todo < ActiveRecord::Base
   	completed_at?
   end
 
+  def complete!
+  	touch :completed_at
+  end
 end
